@@ -1,0 +1,62 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
+
+
+android {
+    
+    compileSdkVersion rootProject.compileSdkVersion
+    
+    defaultConfig {
+        applicationId "com.smarttoolfactory.tutorial1_1pagingwithdb"
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    //AppCompat
+    implementation 'androidx.appcompat:appcompat:' + rootProject.appCompatVersion
+    implementation 'androidx.core:core-ktx:' + rootProject.coreKtxVersion
+
+    // Material
+    implementation 'com.google.android.material:material:' + rootProject.materialVersion
+    // ConstraintLayout
+    implementation 'androidx.constraintlayout:constraintlayout:' + rootProject.constraintLayoutVersion
+
+    // architecture components
+    implementation 'androidx.lifecycle:lifecycle-extensions:' + archComponentsVersion
+    implementation 'androidx.lifecycle:lifecycle-runtime:' + archComponentsVersion
+    kapt 'androidx.lifecycle:lifecycle-compiler:' + archComponentsVersion
+
+
+    // Room
+    implementation "androidx.room:room-runtime:$roomVersion"
+    kapt "androidx.room:room-compiler:$roomVersion"
+    // optional - RxJava support for Room
+    implementation 'androidx.room:room-rxjava2:' + roomVersion
+
+    // Paging
+    implementation "androidx.paging:paging-runtime:$pagingVersion"
+
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+}

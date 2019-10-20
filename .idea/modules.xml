@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/External-Tutorial-Paging-Codelab/External-Tutorial-Paging-Codelab.iml" filepath="$PROJECT_DIR$/External-Tutorial-Paging-Codelab/External-Tutorial-Paging-Codelab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/External-Tutorial-PagingSample/External-Tutorial-PagingSample.iml" filepath="$PROJECT_DIR$/External-Tutorial-PagingSample/External-Tutorial-PagingSample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Paging.iml" filepath="$PROJECT_DIR$/Paging.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tutorial1-1PagingWithDB/Tutorial1-1PagingWithDB.iml" filepath="$PROJECT_DIR$/Tutorial1-1PagingWithDB/Tutorial1-1PagingWithDB.iml" />
+    </modules>
+  </component>
+</project>
