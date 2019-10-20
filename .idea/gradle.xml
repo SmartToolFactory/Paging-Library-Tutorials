@@ -9,7 +9,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/External-Tutorial-Paging-Codelab" />
+            <option value="$PROJECT_DIR$/External-Tutorial-Paging-With-DB-TutsPlus" />
             <option value="$PROJECT_DIR$/External-Tutorial-PagingSample" />
+            <option value="$PROJECT_DIR$/External-Tutorial-Room-Without-Paging" />
             <option value="$PROJECT_DIR$/Tutorial1-1PagingWithDB" />
           </set>
         </option>

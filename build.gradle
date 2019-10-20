@@ -66,6 +66,8 @@ ext {
 
     // Room
     roomVersion = '2.2.0'
+    archLifecycleVersion = '2.2.0-beta01'
+    coreTestingVersion = '2.1.0'
 
     // Paging
     pagingVersion = '2.1.0'

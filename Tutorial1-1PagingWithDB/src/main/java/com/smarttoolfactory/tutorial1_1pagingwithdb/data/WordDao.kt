@@ -1,9 +1,12 @@
 package com.smarttoolfactory.tutorial1_1pagingwithdb.data
 
+import androidx.lifecycle.LiveData
 import androidx.paging.DataSource
 import androidx.room.Dao
 import androidx.room.Insert
+import androidx.room.OnConflictStrategy
 import androidx.room.Query
+
 
 @Dao
 interface WordDao {
@@ -20,9 +23,14 @@ interface WordDao {
     // We do not need a conflict strategy, because the word is our primary key, and you cannot
     // add two items with the same primary key to the database. If the table has more than one
     // column, you can use @Insert(onConflict = OnConflictStrategy.REPLACE) to update a row.
-    @Insert
-    fun insert(word: Word)
+    // or OnConflictStrategy.IGNORE
+
+    @Insert(onConflict = OnConflictStrategy.IGNORE)
+    fun insert(word: Word): Long
 
     @Query("DELETE FROM word_table")
     fun deleteAll()
+
+    @Query("SELECT COUNT(word) FROM word_table")
+    fun getRowCount(): LiveData<Int>
 }

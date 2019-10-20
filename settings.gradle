@@ -14,4 +14,4 @@
  * limitations under the License.
  */
 
-include ':External-Tutorial-PagingSample', ':External-Tutorial-Paging-Codelab', ':Tutorial1-1PagingWithDB'
+include ':External-Tutorial-PagingSample', ':External-Tutorial-Paging-Codelab', ':Tutorial1-1PagingWithDB', ':External-Tutorial-Room-Without-Paging', ':External-Tutorial-Paging-With-DB-TutsPlus'
