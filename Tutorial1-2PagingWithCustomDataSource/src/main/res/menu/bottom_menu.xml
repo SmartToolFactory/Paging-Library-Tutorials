@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/detail_dest"
+        android:icon="@drawable/ic_details_24dp"
+        android:title="Details"
+        android:iconTint="#fff"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/cast_dest"
+        android:icon="@drawable/ic_cast_connected_24dp"
+        android:title="Connected"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/settings_dest"
+        android:icon="@drawable/ic_settings_24dp"
+        android:title="Settings"
+        app:showAsAction="ifRoom" />
+
+
+    <item
+        android:id="@+id/camera_dest"
+        android:icon="@drawable/ic_camera_24dp"
+        android:title="Camera"
+        app:showAsAction="ifRoom" />
+</menu>

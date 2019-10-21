@@ -18,24 +18,37 @@ class WordRepository(application: Application) {
 
 
     private val wordDao: WordDao
+
     // Room executes all queries on a separate thread.
     // Observed LiveData will notify the observer when the data has changed.
-    val allWords: LiveData<PagedList<Word>>
+    val allWordsPaged: LiveData<PagedList<Word>>
+
+    val allWords: LiveData<List<Word>>
 
     init {
         val db = WordRoomDatabase.getDatabase(application)
         wordDao = db.wordDao()
 
+        // Create a config for paged list
         val config = PagedList.Config.Builder()
-            .setPageSize(20)
-            .setEnablePlaceholders(true)
-            .setPrefetchDistance(10)
+            .setPageSize(5)
+            // ⚠️ set placeholders false to diplay shorter scrollbar
+            // Disables null placeholders
+            .setEnablePlaceholders(false)
+            .setPrefetchDistance(5)
             .build()
 
 
-        val pagedListBuilder = LivePagedListBuilder(wordDao.getAllUsers(), config)
+        // Create factory for paged list
+        val factory = wordDao.getAllUsersPaged()
 
-        allWords = pagedListBuilder.build()
+
+        val pagedListBuilder = LivePagedListBuilder(factory, config)
+
+        allWordsPaged = pagedListBuilder.build()
+
+
+        allWords = wordDao.getAllUsers()
 
     }
 

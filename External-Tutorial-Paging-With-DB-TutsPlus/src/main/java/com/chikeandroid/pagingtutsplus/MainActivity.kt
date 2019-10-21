@@ -6,6 +6,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.RecyclerView
 import com.chikeandroid.pagingtutsplus.adapter.PersonAdapter
+import com.chikeandroid.pagingtutsplus.adapter.PersonNonPagedAdapter
 import com.chikeandroid.pagingtutsplus.viewmodels.PersonsViewModel
 
 class MainActivity : AppCompatActivity() {
@@ -18,16 +19,29 @@ class MainActivity : AppCompatActivity() {
 
         viewModel = ViewModelProviders.of(this).get(PersonsViewModel::class.java)
 
-        val adapter = PersonAdapter()
-        findViewById<RecyclerView>(R.id.name_list).adapter = adapter
+        // Paged Adapter
+        val adapterPaged = PersonAdapter()
+        subscribeUiPaged(adapterPaged)
 
-        subscribeUi(adapter)
+        // Non-paged Adapter
+//        val adapter = PersonNonPagedAdapter()
+
+        findViewById<RecyclerView>(R.id.name_list).adapter = adapterPaged
+
+//        subscribeUI(adapter)
     }
 
 
-    private fun subscribeUi(adapter: PersonAdapter) {
+    private fun subscribeUiPaged(adapter: PersonAdapter) {
         viewModel.getPersonLiveData().observe(this, Observer { names ->
             if (names != null) adapter.submitList(names)
+        })
+    }
+
+    private fun subscribeUI(adapter: PersonNonPagedAdapter) {
+
+        viewModel.getPersonNonPagedLiveData().observe(this, Observer {
+            if (it != null) adapter.submitList(it)
         })
     }
 }

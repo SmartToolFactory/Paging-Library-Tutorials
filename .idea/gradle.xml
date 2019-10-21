@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/External-Tutorial-PagingSample" />
             <option value="$PROJECT_DIR$/External-Tutorial-Room-Without-Paging" />
             <option value="$PROJECT_DIR$/Tutorial1-1PagingWithDB" />
+            <option value="$PROJECT_DIR$/Tutorial1-2PagingWithCustomDataSource" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

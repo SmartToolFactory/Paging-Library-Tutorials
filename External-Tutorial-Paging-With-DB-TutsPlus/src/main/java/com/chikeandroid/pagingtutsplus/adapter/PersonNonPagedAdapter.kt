@@ -1,16 +1,17 @@
 package com.chikeandroid.pagingtutsplus.adapter
 
+import androidx.paging.PagedListAdapter
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import androidx.paging.PagedListAdapter
+import androidx.recyclerview.widget.ListAdapter
 import com.chikeandroid.pagingtutsplus.R
 import com.chikeandroid.pagingtutsplus.data.Person
 import kotlinx.android.synthetic.main.item_person.view.*
 
-class PersonAdapter() :
-    PagedListAdapter<Person, PersonAdapter.PersonViewHolder>(PersonDiffCallback()) {
+class PersonNonPagedAdapter() : ListAdapter<Person, PersonNonPagedAdapter.PersonViewHolder>(PersonDiffCallback()) {
 
     override fun onBindViewHolder(holderPerson: PersonViewHolder, position: Int) {
         var person = getItem(position)
@@ -23,17 +24,12 @@ class PersonAdapter() :
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PersonViewHolder {
-        return PersonViewHolder(
-            LayoutInflater.from(parent.context).inflate(
-                R.layout.item_person_paged,
-                parent, false
-            )
-        )
+        return PersonViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_person,
+                parent, false))
     }
 
 
-    class PersonViewHolder(view: View) :
-        androidx.recyclerview.widget.RecyclerView.ViewHolder(view) {
+    class PersonViewHolder (view: View) : androidx.recyclerview.widget.RecyclerView.ViewHolder(view) {
 
         var tvName: TextView = view.name
 

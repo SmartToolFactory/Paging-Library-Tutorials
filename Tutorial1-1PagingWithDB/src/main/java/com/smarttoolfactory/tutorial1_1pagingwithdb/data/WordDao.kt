@@ -14,7 +14,11 @@ interface WordDao {
     // This method will create a DataSource for Paging. It will provide Number of Items required to
     // show on a page. DataSource.Factory is used to creating a DataSource.
     @Query("SELECT * from word_table ORDER BY word ASC")
-    fun getAllUsers(): DataSource.Factory<Int, Word>
+    fun getAllUsersPaged(): DataSource.Factory<Int, Word>
+
+
+    @Query("SELECT * from word_table ORDER BY word ASC")
+    fun getAllUsers(): LiveData<List<Word>>
 
 // TODO Check out if this works
 //    @get:Query("SELECT * from word_table ORDER BY word ASC")

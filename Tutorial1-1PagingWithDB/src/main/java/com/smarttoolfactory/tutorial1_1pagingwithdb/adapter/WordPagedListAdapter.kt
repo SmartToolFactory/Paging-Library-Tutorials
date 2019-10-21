@@ -4,22 +4,27 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.annotation.NonNull
+import androidx.paging.PagedListAdapter
 import androidx.recyclerview.widget.DiffUtil
-import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.smarttoolfactory.tutorial1_1pagingwithdb.R
 import com.smarttoolfactory.tutorial1_1pagingwithdb.data.Word
 
 
-class WordListAdapter : ListAdapter<Word, WordListAdapter.WordViewHolder>(DIFF_CALLBACK) {
+class WordPagedListAdapter :
+    PagedListAdapter<Word, WordPagedListAdapter.WordViewHolder>(DIFF_CALLBACK) {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): WordViewHolder {
+
+    @NonNull
+    override fun onCreateViewHolder(@NonNull parent: ViewGroup, viewType: Int): WordViewHolder {
         val view =
-            LayoutInflater.from(parent.context).inflate(R.layout.recyclerview_item, parent, false)
+            LayoutInflater.from(parent.context)
+                .inflate(R.layout.recyclerview_item_paged, parent, false)
         return WordViewHolder(view)
     }
 
-    override fun onBindViewHolder(holder: WordViewHolder, position: Int) {
+    override fun onBindViewHolder(@NonNull holder: WordViewHolder, position: Int) {
         val current = getItem(position)
         holder.wordItemView.text = current?.word
     }

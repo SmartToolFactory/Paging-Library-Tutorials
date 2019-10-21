@@ -14,14 +14,23 @@ class PersonsViewModel constructor(application: Application)
 
     private var personLiveData: LiveData<PagedList<Person>>
 
+    private var personNonPagedLiveData: LiveData<List<Person>>
+
     init {
-        val factory: DataSource.Factory<Int, Person> =
-        AppDatabase.getInstance(getApplication()).personDao().getAllPaged()
+        val personDao = AppDatabase.getInstance(getApplication()).personDao()
+
+        // Get Factory
+        val factory: DataSource.Factory<Int, Person> = personDao.getAllPaged()
 
         val pagedListBuilder: LivePagedListBuilder<Int, Person>  = LivePagedListBuilder<Int, Person>(factory,
-                50)
+                5)
         personLiveData = pagedListBuilder.build()
+
+
+        personNonPagedLiveData = personDao.getPersons()
     }
 
     fun getPersonLiveData() = personLiveData
+
+    fun getPersonNonPagedLiveData() = personNonPagedLiveData
 }
