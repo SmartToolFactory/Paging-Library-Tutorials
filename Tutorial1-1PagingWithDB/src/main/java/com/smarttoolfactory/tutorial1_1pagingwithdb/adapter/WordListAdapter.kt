@@ -22,11 +22,13 @@ class WordListAdapter : ListAdapter<Word, WordListAdapter.WordViewHolder>(DIFF_C
     override fun onBindViewHolder(holder: WordViewHolder, position: Int) {
         val current = getItem(position)
         holder.wordItemView.text = current?.word
+
+        println("🏪 WordListAdapter onBindViewHolder() position: $position")
+        println("🚗 WordListAdapter getCurrentList(): ${currentList?.size}")
     }
 
 
-    class WordViewHolder(itemView: View) :
-        RecyclerView.ViewHolder(itemView) {
+    class WordViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val wordItemView: TextView = itemView.findViewById(R.id.textView)
     }
 

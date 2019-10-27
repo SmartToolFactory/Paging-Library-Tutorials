@@ -9,9 +9,11 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/External-Tutorial-Paging-Codelab" />
-            <option value="$PROJECT_DIR$/External-Tutorial-Paging-With-DB-TutsPlus" />
-            <option value="$PROJECT_DIR$/External-Tutorial-PagingSample" />
-            <option value="$PROJECT_DIR$/External-Tutorial-Room-Without-Paging" />
+            <option value="$PROJECT_DIR$/External-Tutorial-Paging-Room-REST-AAC" />
+            <option value="$PROJECT_DIR$/External-Tutorial-Room-CustomDataSource" />
+            <option value="$PROJECT_DIR$/External-Tutorial-Room-Paging-TutsPlus" />
+            <option value="$PROJECT_DIR$/External-Tutorial-Room-PagingSample-ItemTouchHelper" />
+            <option value="$PROJECT_DIR$/External-Tutorial-Room-REST-NoPaging" />
             <option value="$PROJECT_DIR$/Tutorial1-1PagingWithDB" />
             <option value="$PROJECT_DIR$/Tutorial1-2PagingWithCustomDataSource" />
           </set>

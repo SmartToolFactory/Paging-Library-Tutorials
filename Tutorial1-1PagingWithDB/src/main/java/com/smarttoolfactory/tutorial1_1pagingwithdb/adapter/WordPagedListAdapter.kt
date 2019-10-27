@@ -27,6 +27,9 @@ class WordPagedListAdapter :
     override fun onBindViewHolder(@NonNull holder: WordViewHolder, position: Int) {
         val current = getItem(position)
         holder.wordItemView.text = current?.word
+        println("🎃 WordPagedListAdapter onBindViewHolder() position: $position")
+        println("🥶 WordPagedListAdapter getCurrentList(): ${currentList?.size}")
+
     }
 
 

@@ -11,18 +11,21 @@ import androidx.room.Query
 @Dao
 interface WordDao {
 
+    @Query("SELECT * from word_table ORDER BY word ASC")
+    fun getWordsAscPaged(): DataSource.Factory<Int, Word>
+
+
+    @Query("SELECT * from word_table ORDER BY word ASC")
+    fun getWordsAsc(): LiveData<List<Word>>
+
     // This method will create a DataSource for Paging. It will provide Number of Items required to
     // show on a page. DataSource.Factory is used to creating a DataSource.
-    @Query("SELECT * from word_table ORDER BY word ASC")
-    fun getAllUsersPaged(): DataSource.Factory<Int, Word>
+    @Query("SELECT * from word_table")
+    fun getWordsPaged(): DataSource.Factory<Int, Word>
 
 
-    @Query("SELECT * from word_table ORDER BY word ASC")
-    fun getAllUsers(): LiveData<List<Word>>
-
-// TODO Check out if this works
-//    @get:Query("SELECT * from word_table ORDER BY word ASC")
-//    val allUsers: DataSource.Factory<Int, Word>
+    @Query("SELECT * from word_table")
+    fun getWords(): LiveData<List<Word>>
 
     // We do not need a conflict strategy, because the word is our primary key, and you cannot
     // add two items with the same primary key to the database. If the table has more than one

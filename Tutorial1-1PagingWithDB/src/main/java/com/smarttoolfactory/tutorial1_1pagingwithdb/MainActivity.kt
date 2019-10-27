@@ -10,13 +10,13 @@ import androidx.recyclerview.widget.RecyclerView
 import com.smarttoolfactory.tutorial1_1pagingwithdb.adapter.WordListAdapter
 import com.smarttoolfactory.tutorial1_1pagingwithdb.adapter.WordPagedListAdapter
 import com.smarttoolfactory.tutorial1_1pagingwithdb.data.Word
-import com.smarttoolfactory.tutorial1_1pagingwithdb.data.WordRepository
 
 
 /**
  * Sample for paging only with Database
  *
  * * 1- Create a Dao that returns DataSource.Factory<Int, Word>
+ *
  * * 2- Create a config to set properties of list by
  * config = PagedList.Config.Builder()
  * .setPageSize(20)
@@ -25,7 +25,7 @@ import com.smarttoolfactory.tutorial1_1pagingwithdb.data.WordRepository
  * .build()
  *
  * * 3- Create LivePagedBuilder and get LiveData<PagedList<Word>> using it
- *  val pagedListBuilder = LivePagedListBuilder(wordDao.getAllUsersPaged(), config)
+ *  val pagedListBuilder = LivePagedListBuilder(wordDao.getWordsPaged(), config)
  *  allWordsPaged = pagedListBuilder.build()
  *
  * * 4- Create an adapter that extends PagedListAdapter<Word, WordPagedListAdapter.WordViewHolder>
@@ -84,6 +84,7 @@ class MainActivity : AppCompatActivity() {
 
         wordRepository.allWords.observe(this, Observer {
             if (it != null) adapter.submitList(it)
+            println("😎 MainActivity allWords size: ${it.size}")
         })
 
     }
@@ -99,6 +100,8 @@ class MainActivity : AppCompatActivity() {
 
         wordRepository.allWordsPaged.observe(this, Observer {
             if (it != null) pagedListAdapter.submitList(it)
+            println("😎 MainActivity allWordsPaged size: ${it.size}")
+
         })
 
     }
