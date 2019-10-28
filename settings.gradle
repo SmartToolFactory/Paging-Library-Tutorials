@@ -1,9 +1,10 @@
-include ':External-Tutorial-Room-PagingSample-ItemTouchHelper', ':External-Tutorial-Paging-Room-REST-AAC'
+include ':External-Tutorial-Paging-Room-PagingSample-ItemTouchHelper', ':Tutorial2-1Paging-REST', ':External-Tutorial-Paging-REST-NewsApi'
+include ':External-Tutorial-Paging-Room-REST-AAC'
 include ':External-Tutorial-Paging-Codelab'
-include ':External-Tutorial-Room-Paging-TutsPlus'
-include ':External-Tutorial-Room-CustomDataSource'
+include ':External-Tutorial-Paging-Room-TutsPlus'
+include ':External-Tutorial-Paging-Room-CustomDataSource'
 include ':External-Tutorial-Room-REST-NoPaging'
 
-include ':Tutorial1-1PagingWithDB'
-include ':Tutorial1-2PagingWithCustomDataSource'
+include ':Tutorial1-1Paging-Room'
+include ':Tutorial1-2Paging-Room-CustomDataSource'
 

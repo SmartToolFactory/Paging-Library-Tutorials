@@ -1,8 +1,8 @@
 package com.bitwindow.aacpaginginfinitescrollingwithnetworksample.data.repository
 
-import android.arch.lifecycle.LiveData
-import android.arch.lifecycle.MutableLiveData
-import android.arch.paging.PagedList
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.paging.PagedList
 import com.bitwindow.aacpaginginfinitescrollingwithnetworksample.AppExecutors
 import com.bitwindow.aacpaginginfinitescrollingwithnetworksample.domain.entity.MoviePoster
 import com.bitwindow.aacpaginginfinitescrollingwithnetworksample.domain.movielist.MovieListRepository
@@ -36,6 +36,7 @@ class MovieListRepositoryImpl @Inject constructor (
 
     override
     fun fetchMore(fetchDate: Date, predicate: (String?) -> (Boolean)) : LiveData<LoadingStatus> {
+
         if (loadingStatus.value == null || loadingStatus.value?.status != Status.LOADING) {
             loadingStatus.value = LoadingStatus.loading()
             Timber.d("fetchMore starting: %s", fetchDate)
@@ -50,6 +51,7 @@ class MovieListRepositoryImpl @Inject constructor (
         } else{
             Timber.d("fetchMore already loading %s", fetchDate)
         }
+
         return loadingStatus
     }
 
