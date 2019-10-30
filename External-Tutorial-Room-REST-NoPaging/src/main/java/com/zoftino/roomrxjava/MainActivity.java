@@ -28,6 +28,12 @@ import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
 
 
+/**
+ * Tutorial from
+ * https://www.zoftino.com/pagination-in-android-using-paging-library
+ *
+ * Please give credit to author if you like this tutorial.
+ */
 public class MainActivity extends AppCompatActivity {
 
     @Inject @Named("activity")

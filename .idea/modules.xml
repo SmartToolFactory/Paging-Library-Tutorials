@@ -3,16 +3,20 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/External-Tutorial-Paging-Codelab/External-Tutorial-Paging-Codelab.iml" filepath="$PROJECT_DIR$/External-Tutorial-Paging-Codelab/External-Tutorial-Paging-Codelab.iml" />
-      <module fileurl="file://$PROJECT_DIR$/External-Tutorial-Paging-REST-NewsApi/External-Tutorial-Paging-REST-NewsApi.iml" filepath="$PROJECT_DIR$/External-Tutorial-Paging-REST-NewsApi/External-Tutorial-Paging-REST-NewsApi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/External-Tutorial-Paging-REST-ImageGallery/External-Tutorial-Paging-REST-ImageGallery.iml" filepath="$PROJECT_DIR$/External-Tutorial-Paging-REST-ImageGallery/External-Tutorial-Paging-REST-ImageGallery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/External-Tutorial-Paging-REST-NewsApi-7Steps/External-Tutorial-Paging-REST-NewsApi-7Steps.iml" filepath="$PROJECT_DIR$/External-Tutorial-Paging-REST-NewsApi-7Steps/External-Tutorial-Paging-REST-NewsApi-7Steps.iml" />
+      <module fileurl="file://$PROJECT_DIR$/External-Tutorial-Paging-REST-NewsApi-StepByStep/External-Tutorial-Paging-REST-NewsApi-StepByStep.iml" filepath="$PROJECT_DIR$/External-Tutorial-Paging-REST-NewsApi-StepByStep/External-Tutorial-Paging-REST-NewsApi-StepByStep.iml" />
+      <module fileurl="file://$PROJECT_DIR$/External-Tutorial-Paging-REST-Room-AAC-TMDB/External-Tutorial-Paging-REST-Room-AAC-TMDB.iml" filepath="$PROJECT_DIR$/External-Tutorial-Paging-REST-Room-AAC-TMDB/External-Tutorial-Paging-REST-Room-AAC-TMDB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/External-Tutorial-Paging-REST-StackOverflowApi/External-Tutorial-Paging-REST-StackOverflowApi.iml" filepath="$PROJECT_DIR$/External-Tutorial-Paging-REST-StackOverflowApi/External-Tutorial-Paging-REST-StackOverflowApi.iml" />
       <module fileurl="file://$PROJECT_DIR$/External-Tutorial-Paging-Room-CustomDataSource/External-Tutorial-Paging-Room-CustomDataSource.iml" filepath="$PROJECT_DIR$/External-Tutorial-Paging-Room-CustomDataSource/External-Tutorial-Paging-Room-CustomDataSource.iml" />
       <module fileurl="file://$PROJECT_DIR$/External-Tutorial-Paging-Room-PagingSample-ItemTouchHelper/External-Tutorial-Paging-Room-PagingSample-ItemTouchHelper.iml" filepath="$PROJECT_DIR$/External-Tutorial-Paging-Room-PagingSample-ItemTouchHelper/External-Tutorial-Paging-Room-PagingSample-ItemTouchHelper.iml" />
-      <module fileurl="file://$PROJECT_DIR$/External-Tutorial-Paging-Room-REST-AAC/External-Tutorial-Paging-Room-REST-AAC.iml" filepath="$PROJECT_DIR$/External-Tutorial-Paging-Room-REST-AAC/External-Tutorial-Paging-Room-REST-AAC.iml" />
       <module fileurl="file://$PROJECT_DIR$/External-Tutorial-Paging-Room-TutsPlus/External-Tutorial-Paging-Room-TutsPlus.iml" filepath="$PROJECT_DIR$/External-Tutorial-Paging-Room-TutsPlus/External-Tutorial-Paging-Room-TutsPlus.iml" />
       <module fileurl="file://$PROJECT_DIR$/External-Tutorial-Room-REST-NoPaging/External-Tutorial-Room-REST-NoPaging.iml" filepath="$PROJECT_DIR$/External-Tutorial-Room-REST-NoPaging/External-Tutorial-Room-REST-NoPaging.iml" />
       <module fileurl="file://$PROJECT_DIR$/Paging.iml" filepath="$PROJECT_DIR$/Paging.iml" />
       <module fileurl="file://$PROJECT_DIR$/Tutorial1-1Paging-Room/Tutorial1-1Paging-Room.iml" filepath="$PROJECT_DIR$/Tutorial1-1Paging-Room/Tutorial1-1Paging-Room.iml" />
       <module fileurl="file://$PROJECT_DIR$/Tutorial1-2Paging-Room-CustomDataSource/Tutorial1-2Paging-Room-CustomDataSource.iml" filepath="$PROJECT_DIR$/Tutorial1-2Paging-Room-CustomDataSource/Tutorial1-2Paging-Room-CustomDataSource.iml" />
       <module fileurl="file://$PROJECT_DIR$/Tutorial2-1Paging-REST/Tutorial2-1Paging-REST.iml" filepath="$PROJECT_DIR$/Tutorial2-1Paging-REST/Tutorial2-1Paging-REST.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tutorial3-1Paging-Rest-And-Room/Tutorial3-1Paging-Rest-And-Room.iml" filepath="$PROJECT_DIR$/Tutorial3-1Paging-Rest-And-Room/Tutorial3-1Paging-Rest-And-Room.iml" />
     </modules>
   </component>
 </project>

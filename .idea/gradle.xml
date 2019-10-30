@@ -9,15 +9,19 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/External-Tutorial-Paging-Codelab" />
-            <option value="$PROJECT_DIR$/External-Tutorial-Paging-REST-NewsApi" />
+            <option value="$PROJECT_DIR$/External-Tutorial-Paging-REST-ImageGallery" />
+            <option value="$PROJECT_DIR$/External-Tutorial-Paging-REST-NewsApi-7Steps" />
+            <option value="$PROJECT_DIR$/External-Tutorial-Paging-REST-NewsApi-StepByStep" />
+            <option value="$PROJECT_DIR$/External-Tutorial-Paging-REST-Room-AAC-TMDB" />
+            <option value="$PROJECT_DIR$/External-Tutorial-Paging-REST-StackOverflowApi" />
             <option value="$PROJECT_DIR$/External-Tutorial-Paging-Room-CustomDataSource" />
             <option value="$PROJECT_DIR$/External-Tutorial-Paging-Room-PagingSample-ItemTouchHelper" />
-            <option value="$PROJECT_DIR$/External-Tutorial-Paging-Room-REST-AAC" />
             <option value="$PROJECT_DIR$/External-Tutorial-Paging-Room-TutsPlus" />
             <option value="$PROJECT_DIR$/External-Tutorial-Room-REST-NoPaging" />
             <option value="$PROJECT_DIR$/Tutorial1-1Paging-Room" />
             <option value="$PROJECT_DIR$/Tutorial1-2Paging-Room-CustomDataSource" />
             <option value="$PROJECT_DIR$/Tutorial2-1Paging-REST" />
+            <option value="$PROJECT_DIR$/Tutorial3-1Paging-Rest-And-Room" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

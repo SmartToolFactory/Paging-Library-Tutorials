@@ -38,10 +38,9 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:' + rootProject.constraintLayoutVersion
 
     // architecture components
-    implementation 'androidx.lifecycle:lifecycle-extensions:' + archComponentsVersion
+    implementation "androidx.lifecycle:lifecycle-extensions:$archComponentsVersion"
     implementation 'androidx.lifecycle:lifecycle-runtime:' + archComponentsVersion
     kapt 'androidx.lifecycle:lifecycle-compiler:' + archComponentsVersion
-
 
     // Room
     implementation "androidx.room:room-runtime:$roomVersion"
@@ -51,6 +50,10 @@ dependencies {
 
     // Paging
     implementation "androidx.paging:paging-runtime:$pagingVersion"
+
+    //adding glide
+    implementation "com.github.bumptech.glide:glide:$glideVersion"
+    kapt "com.github.bumptech.glide:compiler:$glideVersion"
 
 
 }

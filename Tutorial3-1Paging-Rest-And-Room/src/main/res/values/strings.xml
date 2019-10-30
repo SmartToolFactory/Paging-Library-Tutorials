@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Tutorial3-1Paging-Rest-And-Room</string>
+    <string name="loading">Loading</string>
+    <string name="unknown">Unknown</string>
+    <string name="language">Language</string>
+</resources>
